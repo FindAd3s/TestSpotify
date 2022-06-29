@@ -13,7 +13,22 @@
 		3F90B5C1286C300A00C70666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F90B5BF286C300A00C70666 /* Main.storyboard */; };
 		3F90B5C3286C300E00C70666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F90B5C2286C300E00C70666 /* Assets.xcassets */; };
 		3F90B5C6286C300E00C70666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F90B5C4286C300E00C70666 /* LaunchScreen.storyboard */; };
+		3F90B5D4286C3AA200C70666 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90B5D3286C3AA200C70666 /* Constants.swift */; };
+		3F90B5D9286C434200C70666 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F90B5D8286C434200C70666 /* SpotifyiOS.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F90B5D7286C418900C70666 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3F90B5B6286C300A00C70666 /* TestSpotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSpotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +39,9 @@
 		3F90B5C2286C300E00C70666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F90B5C5286C300E00C70666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F90B5C7286C300E00C70666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F90B5D0286C312500C70666 /* TestSpotify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestSpotify-Bridging-Header.h"; sourceTree = "<group>"; };
+		3F90B5D3286C3AA200C70666 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		3F90B5D8286C434200C70666 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F90B5D9286C434200C70666 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +75,26 @@
 		3F90B5B8286C300A00C70666 /* TestSpotify */ = {
 			isa = PBXGroup;
 			children = (
-				3F90B5B9286C300A00C70666 /* AppDelegate.swift */,
+				3F90B5CF286C30A900C70666 /* Files */,
 				3F90B5BB286C300A00C70666 /* SceneDelegate.swift */,
 				3F90B5BD286C300A00C70666 /* ViewController.swift */,
+				3F90B5D0286C312500C70666 /* TestSpotify-Bridging-Header.h */,
+				3F90B5D3286C3AA200C70666 /* Constants.swift */,
+			);
+			path = TestSpotify;
+			sourceTree = "<group>";
+		};
+		3F90B5CF286C30A900C70666 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F90B5B9286C300A00C70666 /* AppDelegate.swift */,
 				3F90B5BF286C300A00C70666 /* Main.storyboard */,
 				3F90B5C2286C300E00C70666 /* Assets.xcassets */,
 				3F90B5C4286C300E00C70666 /* LaunchScreen.storyboard */,
 				3F90B5C7286C300E00C70666 /* Info.plist */,
+				3F90B5D8286C434200C70666 /* SpotifyiOS.framework */,
 			);
-			path = TestSpotify;
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +107,7 @@
 				3F90B5B2286C300A00C70666 /* Sources */,
 				3F90B5B3286C300A00C70666 /* Frameworks */,
 				3F90B5B4286C300A00C70666 /* Resources */,
+				3F90B5D7286C418900C70666 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +130,7 @@
 				TargetAttributes = {
 					3F90B5B5286C300A00C70666 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -141,6 +173,7 @@
 				3F90B5BE286C300A00C70666 /* ViewController.swift in Sources */,
 				3F90B5BA286C300A00C70666 /* AppDelegate.swift in Sources */,
 				3F90B5BC286C300A00C70666 /* SceneDelegate.swift in Sources */,
+				3F90B5D4286C3AA200C70666 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +318,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AG9V5Z8VV5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestSpotify",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestSpotify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -300,9 +338,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TeamAsterisk.TestSpotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSpotify/TestSpotify-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,9 +354,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AG9V5Z8VV5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestSpotify",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestSpotify/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -328,9 +374,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TeamAsterisk.TestSpotify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "TestSpotify/TestSpotify-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
